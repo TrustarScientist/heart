@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HEART | Healthcare Education & Apprenticeship Resource Training</title>
+    <meta name="description" content="Transforming nursing education and workforce development in Nigeria through resource collaboration and digital innovation." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#1e293b', // Slate 800 - Udacity-like dark
+                primary: '#0056d2', // Udacity/Learning Blue
+                secondary: '#2563eb', // Brighter Blue
+                light: '#f8fafc', // Slate 50
+                surface: '#ffffff',
+                accent: '#38bdf8' // Sky blue
+              }
+            },
+            fontFamily: {
+              sans: ['SuisseIntl', 'Inter', 'system-ui', 'sans-serif'],
+              serif: ['Georgia', 'serif'],
+            },
+            boxShadow: {
+              'card': '0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08)',
+              'card-hover': '0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06)',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      h1, h2, h3 { font-family: 'Inter', sans-serif; letter-spacing: -0.02em; }
+      .font-serif { font-family: 'Merriweather', serif; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
