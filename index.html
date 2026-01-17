@@ -12,7 +12,7 @@
           extend: {
             colors: {
               brand: {
-                dark: '#1e293b', // Slate 800 - Udacity-like dark
+                dark: '#1e293b', // Slate 800
                 primary: '#0056d2', // Udacity/Learning Blue
                 secondary: '#2563eb', // Brighter Blue
                 light: '#f8fafc', // Slate 50
@@ -27,6 +27,21 @@
             boxShadow: {
               'card': '0 2px 4px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.08)',
               'card-hover': '0 8px 16px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06)',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
             }
           }
         }
@@ -37,6 +52,14 @@
       body { font-family: 'Inter', sans-serif; }
       h1, h2, h3 { font-family: 'Inter', sans-serif; letter-spacing: -0.02em; }
       .font-serif { font-family: 'Merriweather', serif; }
+      
+      /* Smooth scrolling for anchor links */
+      html { scroll-behavior: smooth; }
+      
+      /* Utility for staggered animations */
+      .delay-100 { animation-delay: 100ms; }
+      .delay-200 { animation-delay: 200ms; }
+      .delay-300 { animation-delay: 300ms; }
     </style>
   <script type="importmap">
 {
